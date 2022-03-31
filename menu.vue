@@ -18,6 +18,9 @@
         >
           <v-list-item-title>{{ item.title }}</v-list-item-title>
         </v-list-item>
+        <v-divider
+        v-if=""
+        >
       </v-list>
     </v-menu>
   </div>
