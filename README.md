@@ -2,5 +2,5 @@
 vue-study
 
 
-v-slot
-v-on:click
+##v-slot
+##v-on:click
