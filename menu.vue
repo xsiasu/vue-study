@@ -11,15 +11,20 @@
           Dropdown
         </v-btn>
       </template>
-      <v-list>
+      <v-list
+       v-for="(item, index) in items"
+          :key="index">
         <v-list-item
-          v-for="(item, index) in items"
-          :key="index"
+         v-if
+         :key="index"
+         :to="item.to"
+         href
         >
           <v-list-item-title>{{ item.title }}</v-list-item-title>
         </v-list-item>
         <v-divider
-        v-if=""
+        v-else
+        :key="item.title"
         >
       </v-list>
     </v-menu>
@@ -33,6 +38,7 @@
         { title: 'Click Me' },
         { title: 'Click Me' },
         { title: 'Click Me' },
+        { divider : false },
         { title: 'Click Me 2' },
       ],
     }),
